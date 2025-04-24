@@ -1,54 +1,91 @@
-# React + TypeScript + Vite
+# 🚀 Stunning Hero Section – AI Website Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a sleek, fully responsive **Hero Section** built with **React + TypeScript** and styled using **pure CSS**. It simulates AI content generation and was created as part of a 1-hour mini challenge.
 
-Currently, two official plugins are available:
+> 🎯 The goal was to demonstrate clean design, interactivity, responsiveness, and polish – all within a single "Hero" section.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🎨 Beautiful gradient background based on brand colors
+- 🧠 “Regenerate with AI” button that simulates AI output (local state)
+- 📝 Inline editable text (headline & subheadline)
+- 🌀 Loading skeletons on regenerate click
+- 📱 Fully responsive layout across mobile, tablet, desktop
+- 🔥 Pure CSS button styling – no Tailwind used
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🛠 Tech Stack
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [react-loading-skeleton](https://github.com/dvtng/react-loading-skeleton)
+- Pure CSS (no Tailwind)
+
+---
+
+## 🛠️ Getting Started
+
+### 📦 Install and run locally
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/abdelrahman-2513/hero-section
+cd ai-hero-section
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Install dependencies**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+3. **Run the development server**
+
+```bash
+npm run dev
+```
+
+4. **Open the project in your browser**
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📁 Project Structure
+
+```
+.
+├── public/
+│   └── images/
+│       └── logo.jpg         # Company logo
+├── src/
+│   ├── components/
+│   │   └── Hero.tsx         # The Hero section component
+│   ├── data/
+│   │   └── heroData.ts      # Dummy headlines, subheadlines, images
+│   ├── index.css            # Global styles + custom button styles
+│   └── main.tsx             # App entry point
+├── index.html
+└── README.md
+```
+
+---
+
+## 📣 Challenge Brief
+
+This project was built for the **Vibe Coder Mini Challenge**:
+
+> Build a single, beautiful "Hero Section" website block with editable content and light interactivity — all in under 1 hour.
+
+---
+
+## 👨‍💻 Author
+
+Made with ❤️ by [Abdelrahman Hassan] – [https://my-portfolio-abdo.vercel.app/]
