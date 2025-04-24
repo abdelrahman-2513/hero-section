@@ -1,5 +1,4 @@
 
-import { ThemeProvider } from '@material-tailwind/react'
 import './App.css'
 import Hero from './components/Hero'
 
